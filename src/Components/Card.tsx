@@ -11,17 +11,11 @@ export default function Card() {
     <div>
       <h1>Test</h1>
       <div>{counter}</div>
-      <CompoundButton
-        secondaryText="Test 1234"
-        onClick={() => dispatch(increment())}
-      >
+      <CompoundButton secondaryText="+1" onClick={() => dispatch(increment())}>
         Add
       </CompoundButton>
-      <CompoundButton
-        secondaryText="Test 1234"
-        onClick={() => dispatch(decrement())}
-      >
-        Remove
+      <CompoundButton secondaryText="-1" onClick={() => dispatch(decrement())}>
+        Subtrack
       </CompoundButton>
     </div>
   );
